@@ -45,15 +45,43 @@ body{
 }
 
 
+/**teste**/
+
+.titulo-principal{
+    text-align: left;
+    font-family:'Courier New', Courier, monospace;
+    color: #fff;
+}
+.titulo-principal:after{
+ content: '|';
+ opacity: 1;
+ animation: pisca .9s infinite;
+}
+/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+
+/**fim teste**/
+
 /**fim pac-man**/
 nav a:hover{
+   border: none;
+   color: red !important;
+   border-bottom: 3px solid red;
    
-    color: aqua !important;
   
 }
 
 .navbar{
-    height: 85px;
+    padding: 20px 1rem !important;
     height: auto;
 }
 nav a {
@@ -66,11 +94,10 @@ nav a {
     text-transform: uppercase;
 }
 
-.perfil{
-    
+.perfil{    
     color: white;
     height: 300PX;
-    padding-top: 120px;
+    padding-top: 180px;
     
 }
 

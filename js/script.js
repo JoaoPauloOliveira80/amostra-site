@@ -1,14 +1,19 @@
 console.log('funcionando')
 
-// Spinner
-var spinner = function () {
-    setTimeout(function () {
-        if ($('#spinner').length > 0) {
-            $('#spinner').removeClass('show');
-        }
-    }, 1);
-};
-spinner();
+function typeWrite(elemento){
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = ' ';
+    textoArray.forEach(function(letra, i){   
+      
+    setTimeout(function(){
+        elemento.innerHTML += letra;
+    }, 100 * i)
+
+  });
+}
+const titulo = document.querySelector('.titulo-principal');
+typeWrite(titulo);
+
 
 
     
