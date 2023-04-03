@@ -6,20 +6,13 @@
        Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  }
 
-/*body{
+body{
     font-family: "Open Sans";
     background-color: #000 !important;
     background-repeat: no-repeat;
     background-size: cover;
     color: #6C7293;
     
-}*/
-
-body {
-    background-color: black !important;
-	font-family: 'Titillium Web', sans-serif;
-	margin: 0;	
-    overflow-y: auto;
 }
 
 /*inicio pac-man*/
@@ -56,18 +49,14 @@ body {
 nav a:hover{
    
     color: aqua !important;
-    border: none;
-    border-bottom: 3px solid #FD8325;
-    opacity: 1
+  
+}
+
+.navbar{
+    height: 85px;
 }
 nav a {
     color: white !important;
-    
-  
-  
-
- 
-
 }
 
 .navbar-nav{
