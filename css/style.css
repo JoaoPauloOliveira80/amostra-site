@@ -54,6 +54,7 @@ nav a:hover{
 
 .navbar{
     height: 85px;
+    height: auto;
 }
 nav a {
     color: white !important;
